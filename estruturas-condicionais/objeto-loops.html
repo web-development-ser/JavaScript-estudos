@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+  <script>
+    
+    let a = 0
+    while (a < 3) {
+      console.log("Hello"); a++;
+    }
+    
+    let b = 0
+    do {
+      console.log("Olá"); b++;
+    } while (b < 3)
+    
+  </script>
+  
+  <script>
+    
+    for(c = 0; c < 3; c++) {
+      console.log("Hello play")
+    }
+    
+    
+  </script>
+  
+  <script>
+    
+    var carros = [{
+      name: "Raiz",
+      marca: "Mostang",
+      cor: "Vermelho",
+      ano: 2013
+    },
+    {
+      name:"Relâmpago",
+      marca: "Velore",
+      cor: "Verde",
+      ano: 2001
+    }]
+    
+   /* for(objeto of carros) {
+      console.log(carros[objeto])
+    }*/
+    
+    for (objetoUno of carros.entries()) {
+      console.log(carros[0])
+      console.log(carros[1])
+    }
+    
+    
+  </script>
+  
+  
+</body>
+</html>

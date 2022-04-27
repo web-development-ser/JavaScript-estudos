@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+
+  <script>
+  //Dados coletáveis...
+    let opcao = 'b'
+    const password = 1897
+    const username = "play.com"
+    
+  //Confirmação dos dados coletados...
+    if (opcao == "a" || opcao == "b" || opcao == "c" || opcao == "d") {
+      console.log("Processando...")
+      if (password === 1897 && username === "play.com") {
+        console.log("Bem vindo...")
+      } else {
+        console.log("Senha inválida.")
+      }
+    } else {
+      console.log("Sem caractese encontrada...")
+    }
+    
+  //Parte de escolha opção...
+    var amazon = {
+      name: "Amazon",
+      price: 10,
+      plan: "30 dias"
+    }
+    var netflix = {
+      name: "Netflix",
+      price: 25,
+      plan: "30 dias"
+    }
+    var hboMax = {
+      name: "HBO Max",
+      price: 30,
+      plan: "30 dias"
+    }
+    var disney = {
+      name: "Disney",
+      price: 25,
+      plan: "30 dias"
+    }
+  
+  //Lendo a opções escolhida...
+    switch (opcao) {
+      case 'a':
+        console.log(amazon)
+        break;
+        
+      case 'b':
+        console.log(netflix)
+        break;
+        
+      case 'c' :
+        console.log(hboMax)
+        break;
+        
+      case 'd' :
+        console.log(disney)
+        break;
+        
+      default:
+      console.log("Escolha opção...")
+      break;
+    }
+    
+    document.write("Exercícios apresentáveis no console, não apresentados na página web...")
+  </script>
+</body>
+
+</html>
