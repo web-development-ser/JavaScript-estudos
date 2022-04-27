@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+  
+  <script>
+    
+    // Média de vlts de energia elétrica correndo no fio.
+    let onn = 17;
+    let off = 13;
+    
+    // Vlts passando a baixo.
+    var vts = 12
+    
+    // Meia capacidade de energia.
+    if (onn >= vts && off <= vts) {
+      console.log("Ligada...")
+    } else {
+      console.log("Apagada...")
+    }
+    
+    
+    // Display elétrico.
+    const all = 700
+    
+    function display(all) {
+      return all <= 1080
+    }
+    var play = display(700)
+    console.log(play)
+    
+    
+    
+    
+  </script>
+  
+  
+  
+</body>
+</html>
