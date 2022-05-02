@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+  .calc {
+    padding: 20px;
+  }
+  #n1,
+  #n2, #play {
+    text-align: center;
+    width: 40%;
+    height: 40px;
+    border: 2px solid blue;
+    display: block;
+    padding: 7px;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  #play {
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+</style>
+
+<body>
+
+  <div class="calc">
+    <!-- Número um -->
+    <input type="text" id="n1" placeholder="Número [ 1 ]">
+    <br />
+    <!-- Número dois -->
+    <input type="text" id="n2" placeholder="Número [ 2 ]">
+    <!-- Botão -->
+    <input type="button" value="+" onclick="calculo()" id="play">
+    <!-- Resultado -->
+    <p id="result">Resultado: </p>
+  </div>
+
+  <script>
+    
+    function calculo() {
+    
+    var n1 = document.getElementById('n1').value;
+    n1 = Number(n1)
+    var n2 = document.getElementById('n2').value;
+    n2 = Number(n2)
+    
+    
+    var calc = n1 + n2;
+    
+    
+    var play= document.getElementById('result').innerHTML += calc;
+    
+    
+    }
+    
+    
+    
+  </script>
+
+
+</body>
+
+</html>
