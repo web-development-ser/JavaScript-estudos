@@ -24,6 +24,9 @@ function () {
     
     estilos()
   })
+  .catch(err => {
+    console.log("Hello")
+  })
 })
 
 //Estilização ao acionamento da pesquisa...
